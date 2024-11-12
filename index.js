@@ -59,9 +59,15 @@ onValue(shoppingListInDB, function(snapshot) {
     } else {
         // This block will run when there are no items left
         clearItemShoppingListEl();
+        textNoItems();
     }
 })
 
+function textNoItems() {
+    let noItemsText = document.createElement("p");
+    noItemsText.textContent = "No items in shopping list";
+    shoppingListEl.append(noItemsText);
+}
 
 function clearItemShoppingListEl() {
     shoppingListEl.innerHTML = "";

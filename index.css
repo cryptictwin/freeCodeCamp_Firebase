@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     font-family: 'Rubik', sans-serif;
     background-color: #EEF0F4;
+    user-select: none;
 }
 
 input {
@@ -49,7 +50,7 @@ img {
 }
 
 #add-button:hover {
-    color: darkorange;
+    background-color: #432000;
     cursor: pointer;
 }
 
@@ -84,10 +85,11 @@ ul li {
     font-size: 20px;
     border-radius: 5px;
     transition: all 0.3s ease;
+    color: #432000;
 }
 
 
 ul li:hover {
-    background: lightblue;
+    background: #FFECC7;
     cursor: pointer;
 }
