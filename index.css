@@ -9,7 +9,7 @@ html, body {
 input {
     color: #432000;
     background-color: #DCE1EB;
-    width: 70%;
+    width: 280px;
     height: 50px;
     padding: 0;
     border: none;
@@ -23,7 +23,7 @@ input {
 #add-button {
     color: #fdfdfd;
     background-color: #AC485A;
-    width: 70%;
+    width: 280px;
     height: 50px;
     padding: 0;
     border: none;
@@ -34,7 +34,7 @@ input {
 }
 
 .container {
-    width: 400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +45,7 @@ input {
 }
 
 img {
-    width: 40%;
+    width: 160px;
 }
 
 #add-button:hover {
@@ -68,7 +68,7 @@ input:focus::placeholder {
 ul {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 280px;
     align-content: stretch;
     padding: 0;
     gap: 10px;
