@@ -89,3 +89,8 @@ function appendItemShoppingListEl(item) {
     shoppingListEl.append(newEl)
 }
 
+document.addEventListener('touchstart', function (event) {
+    if (event.touches.length > 1) {
+        event.preventDefault(); // Prevents pinch-to-zoom
+    }
+}, { passive: false });
