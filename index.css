@@ -87,12 +87,6 @@ ul li {
     color: #432000;
 }
 
-
-ul li:hover {
-    background: #FFECC7;
-    cursor: pointer;
-}
-
 .completed {
     text-decoration: line-through;
     color: #AC485A;
