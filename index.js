@@ -29,7 +29,7 @@ const addButtonEl = document.getElementById("add-button");
 const shoppingListEl = document.getElementById("shopping-list");
 const addItem = () => {
     let inputValue = inputFieldEl.value;
-    if (inputValue !== "") {
+    if (inputValue !== "" && inputValue.trim() !== "") {
         push(shoppingListInDB, inputValue);
         clearInputFieldEl();
     }
@@ -82,6 +82,9 @@ function appendItemShoppingListEl(item) {
     let itemValue = item[1]
     let newEl = document.createElement("li")
     newEl.textContent = itemValue
+    newEl.addEventListener("click", function () {
+        newEl.classList.toggle("completed")
+    })
     newEl.addEventListener("dblclick", function () {
             let locationItemToRemove = ref(database, `shoppingList/${itemID}`)
             remove(locationItemToRemove)
